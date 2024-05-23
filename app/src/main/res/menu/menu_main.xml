@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.firebasegroupapp6.MainActivity"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+
+        android:title="@string/home"
+         />
+
+    <item
+        android:id="@+id/cart"
+android:icon="@drawable/baseline_add_shopping_cart_24"
+        android:title="@string/cart" />
+
+
+
+
+
+    <!-- Submenu for the "Profile" item -->
+    <item android:title="profile">
+        <menu>
+            <item
+                android:id="@+id/logout"
+android:icon="@drawable/baseline_logout_24"
+                android:title="@string/Logout"
+                />
+        </menu>
+    </item>
+    <item android:title="communicate">
+        <menu>
+
+            <item
+                android:id="@+id/review"
+                android:title="@string/Rate"
+                android:icon="@drawable/baseline_rate_review_24"
+                />
+        </menu>
+    </item>
+</menu>

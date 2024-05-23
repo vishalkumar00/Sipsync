@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    tools:context=".Product_Detail"
+    android:id="@+id/productDetail_DrawerLayout">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/yellow"
+        app:cardCornerRadius="40dp"
+        tools:ignore="TextSizeCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="310dp"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/cart_Pimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/cart_Pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="5dp"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Price $"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cart_Pprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="00.00"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cart_Pdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:padding="10dp"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="TextSizeCheck" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Quantity"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/cart_Pqty"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_text_background"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/addToCartBtn"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#F44336"
+                android:text="Add to Cart"
+
+
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_main" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

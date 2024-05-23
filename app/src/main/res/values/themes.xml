@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FirebaseGroupApp6" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.FirebaseGroupApp6" parent="Base.Theme.FirebaseGroupApp6" />
+
+    //separate style for splash screen
+    <style name="Theme.AppCompat.SplashScreen" parent="Theme.SplashScreen">
+        //now adding there parameters 1st for background color
+        //2nd icon
+        //3rd for main activity
+        
+        <item name="windowSplashScreenBackground">@color/yellow</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_logo</item>
+
+        <item name="postSplashScreenTheme">@style/Base.Theme.FirebaseGroupApp6</item>
+        // name="postSplashScreenTheme" now cuz of this line it become the parent theme which display the splash screen
+        //@style/Base.Theme.FirebaseGroupApp6 cuz of this line this theme will we applied after the splash screen theme
+
+
+
+    </style>
+
+
+</resources>

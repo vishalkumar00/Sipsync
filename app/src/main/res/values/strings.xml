@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FirebaseGroupApp6</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="checkOut">CheckOut Details</string>
+    <string name="profile">Profile</string>
+    <string name="Settings">Settings</string>
+    <string name="Logout">Logout</string>
+    <string name="share">Share</string>
+    <string name="Rate">Review Drink</string>
+
+    <string name="lorem_ipsum">
+        Wine is an alcoholic beverage produced by fermenting crushed grapes or other fruits. With a rich history dating back thousands of years, wine comes in various types, including red, white, rosé, and sparkling.
+    </string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

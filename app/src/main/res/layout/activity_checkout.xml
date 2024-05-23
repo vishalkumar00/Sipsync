@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize,UselessLeaf"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/checkOutFlotingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/back_arrow"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/Customer_First_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="First Name"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/Customer_Last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Last Name"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/Customer_Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/Customer_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/Customer_House_Address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="House Address"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/Customer_Country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Country"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/Customer_Postal_Code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Postal Code"
+                android:background="@drawable/login_edit_text_background"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/line"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Details"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/line"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/yellow"
+                app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Customer_Card_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Card Name"
+                        android:background="@drawable/login_edit_text_background"
+                        android:layout_margin="10dp"
+                        android:padding="8dp"
+                        android:inputType="text"/>
+                    <EditText
+                        android:id="@+id/Customer_Card_Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Card Number"
+                        android:background="@drawable/login_edit_text_background"
+                        android:layout_margin="10dp"
+                        android:padding="8dp"
+                        android:inputType="number"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/Customer_Card_Exp_Date"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/login_edit_text_background"
+                            android:layout_margin="10dp"
+                            android:hint="Exp MM/YY"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            />
+                        <EditText
+                            android:id="@+id/Customer_Card_Cvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="CVV"
+                            android:background="@drawable/login_edit_text_background"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:inputType="number"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/place_Order"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Place Order"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
